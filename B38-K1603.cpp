@@ -13,5 +13,22 @@ scanf("%d",&at[i]);
 printf("\tEnter the priority time of %d process",i+1);
 scanf("%d",&pri[i]);
 }
-
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+if(at[i]<at[j])/*sorting acc to arrival time*/
+{
+temp=p[j];
+p[j]=p[i];
+p[i]=temp;
+temp=at[j];
+at[j]=at[i];
+at[i]=temp;
+temp1=bt[j];
+bt[j]=bt[i];
+bt[i]=temp1;
+}
+}
+}
 }
