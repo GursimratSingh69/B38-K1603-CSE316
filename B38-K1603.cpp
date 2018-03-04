@@ -31,4 +31,31 @@ bt[i]=temp1;
 }
 }
 }
+for(j=0;j<n;j++)
+{   burst=burst+bt[j];
+   min=bt[k];
+for(i=k;i<n;i++)/*main logic*/
+{ min=pri[k];
+if (burst>=at[i])
+{
+if(pri[i]<min)
+{
+temp=p[k];
+p[k]=p[i];
+p[i]=temp;
+temp=at[k];
+at[k]=at[i];
+at[i]=temp;
+temp1=bt[k];
+bt[k]=bt[i];
+bt[i]=temp1;
+temp=pri[k];
+pri[k]=pri[i];
+pri[i]=temp;
+
+}
+}
+}
+k++;
+}
 }
