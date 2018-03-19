@@ -83,4 +83,15 @@ for(i=0;i<n;i++)
 {
 rt[i]=wt[i];
 }
+
+printf("************************");
+printf("\n RESULT:-\t\t\t VARIOUS TIMES");
+printf("\nprocess\t burst\t arrival\tpriority " );
+for(i=0;i<n;i++)
+{
+printf("\n  p%d",p[i]);
+printf("\t   %d",bt[i]);
+printf("\t   %d",at[i]);
+printf("\t\t   %d",pri[i]);
+}
 }
