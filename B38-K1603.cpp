@@ -94,4 +94,15 @@ printf("\t   %d",bt[i]);
 printf("\t   %d",at[i]);
 printf("\t\t   %d",pri[i]);
 }
+
+printf("\nwaiting time\tturnaround time\tresponce time");
+for(i=0;i<n;i++)
+{
+printf("\n  %d",wt[i]);
+printf("\t\t  %d",tt[i]);
+printf("\t\t%d",rt[i]);
+}
+printf("\nAVERAGE WAITING TIME:-  %f ms",wavg);
+printf("\nAVERAGE TURN AROUND TIME:-  %f ms" ,tavg);
+printf("\nAVERAGE RESPONSE TIME:-  %f ms\n",wavg);
 }
